@@ -10,4 +10,11 @@ Configuration tutorial: https://squidfunk.github.io/mkdocs-material/setup/settin
 ## Tutorial and Notes:
 
 - Created new conda environment: `conda create -n versionator`, activated: `conda activate versionator`
-- Installing `mike` abd requirements: `pip install msgpack`, `pip install Jinja2 -U`, `pip install --ignore-installed PyYAML`, `pip install mike`
+- Installing `mike` and requirements: 
+
+```
+pip install msgpack
+pip install Jinja2 -U
+pip install --ignore-installed PyYAML
+pip install mike
+```
