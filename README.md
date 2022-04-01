@@ -18,3 +18,15 @@ pip install Jinja2 -U
 pip install --ignore-installed PyYAML
 pip install mike
 ```
+
+## Activating versions
+
+```
+mike deploy 0.1
+mike serve
+```
+`mike serve` will start a localserver: access via `http://localhost:8000/<version number>`, such as
+
+```
+ http://localhost:8000/0.1
+```
