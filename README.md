@@ -30,3 +30,12 @@ mike serve
 ```
  http://localhost:8000/0.1
 ```
+
+Adding a second version with
+
+```
+mike deploy 0.2
+mike serve
+```
+
+Defining defauilt with `mike set-default 0.1`
