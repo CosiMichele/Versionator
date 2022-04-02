@@ -23,10 +23,9 @@ markdown_extensions:
   - def_list
   - toc:
       permalink: §
-plugins:
-  - search
-  - macros:
-      module_name: mkdocs
+
+theme:
+  name: mkdocs
 
   # 404 page
   static_templates:
