@@ -14,8 +14,19 @@ copyright: 'Copyright &copy; 2022 Cosi Michele'
 
 # Configuration
 
-theme:
-  name: mkdocs
+# theme:
+#   name: mkdocs
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - toc:
+      permalink: §
+plugins:
+  - search
+  - macros:
+      module_name: mkdocss
 
   # 404 page
   static_templates:
