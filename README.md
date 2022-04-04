@@ -13,6 +13,8 @@ Configuration tutorial: https://squidfunk.github.io/mkdocs-material/setup/settin
 - Installing `mike` and requirements: 
 
 ```
+pip install mkdocs
+pip install mkdocs-material
 pip install msgpack
 pip install Jinja2 -U
 pip install --ignore-installed PyYAML
@@ -39,3 +41,6 @@ mike serve
 ```
 
 Defining defauilt with `mike set-default 0.1`
+
+
+mike pushes to gh-pages directly. mk-docs will overwrite these changes, and that is why you never saw them.

@@ -1,10 +1,10 @@
 # General
-site_name: 'Versionator'
-site_description: 'Website for version testing'
+site_name: 'Cosi Michele'
+site_description: 'Website for Cosi Michele, MS'
 site_author: 'Cosi Michele, MS'
-site_url: https://versionator.github.io/home/
+site_url: https://cosimichele.github.io/home/
 
-# # Repository
+# Repository
 # repo_name: CosiMichele
 # repo_url: https://github.com/CosiMichele/cosimichele.github.io
 # edit_uri: edit/main/docs/
@@ -14,19 +14,10 @@ copyright: 'Copyright &copy; 2022 Cosi Michele'
 
 # Configuration
 
-# theme:
-#   name: mkdocs
-
-markdown_extensions:
-  - admonition
-  - attr_list
-  - def_list
-  - toc:
-      permalink: §
-
 theme:
-  name: mkdocs
-  
+  name: material
+
+
   # 404 page
   static_templates:
     - 404.html
