@@ -23,6 +23,8 @@ pip install mike
 
 ## Activating versions
 
+> **WARNING:** `mike` pushes to `gh-pages` directly. MkDocs will overwrite these changes if you have an action to build `gh-pages`. Remove  actions that push (build) to `gh-pages` before you make any changes!
+
 ```
 mike deploy 0.1
 mike serve
@@ -33,14 +35,23 @@ mike serve
  http://localhost:8000/0.1
 ```
 
-Adding a second version with
+> **NOTE:** Before pushing to `gh-pages` **make sure `gh-pages` does not exist (can easily delete from the GitHub menu)**, then do
 
 ```
-mike deploy 0.2
+mike deploy --push 0.1
+```
+
+The first version will be pushed to the `gh-pages` branch.
+
+After changes, adding a second version with
+
+```
+mike deploy --push 0.2
 mike serve
 ```
 
-Defining defauilt with `mike set-default 0.1`
+Defining defauilt with `mike set-default --push 0.2`
 
+## Saving your changes to github
 
-mike pushes to gh-pages directly. mk-docs will overwrite these changes, and that is why you never saw them.
+You can save your changes to github normally at any step, simply ensure that the `.github` folder does not contain any actions towards `gh-pages`.
