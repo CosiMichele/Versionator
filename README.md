@@ -82,3 +82,9 @@ You can save your changes to GitHub normally at any step, simply ensure that the
 You can update a specific version of a `mike` deployed page with `mike deploy <version>` and `mike deploy --push <version>`; prior to pushing with `mike` **ensure that there are no typos in `<version>`**. This will overwrite the specific `mike` deployed version.
 
 Changes and updates can be saved to GitHub normally (add, commit, push).
+
+---
+
+## Example
+
+For a live example, see https://cosimichele.github.io/versionator_mooc/CyVerse-US/.
