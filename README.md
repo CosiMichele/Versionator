@@ -1,6 +1,6 @@
 # Versionator
 
-> :warning: **Note**: this is not a software, just a guide.
+> :warning: **NOTE**: this is not a software, just a guide.
 
 Testing repository for versioning using `MkDocs` and `mike`
 
@@ -41,7 +41,7 @@ mike serve
  http://localhost:8000/0.1
 ```
 
-> **NOTE:** Before pushing to `gh-pages` **make sure `gh-pages` does not exist (can easily delete from the GitHub menu)**, then do
+> :warning: **NOTE:** Before pushing to `gh-pages` **make sure `gh-pages` does not exist (can easily delete from the GitHub menu)**, then do
 
 ```
 mike deploy --push 0.1
