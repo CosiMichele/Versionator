@@ -13,8 +13,8 @@ Configuration tutorial: https://squidfunk.github.io/mkdocs-material/setup/settin
 
 ## Tutorial and Notes:
 
-- Created new conda environment: `conda create -n versionator`, activated: `conda activate versionator`
-- Installing `mike` and requirements: 
+- Create new conda environment: `conda create -n versionator`, activate: `conda activate versionator`
+- Install `mike` and requirements: 
 
 ```
 pip install mkdocs
@@ -29,7 +29,7 @@ pip install mike
 
 ## Activating Versions
 
-> **WARNING:** `mike` pushes to `gh-pages` directly. MkDocs will overwrite these changes if you have an action to build `gh-pages`. Remove  actions that push (build) to `gh-pages` before you make any changes!
+> :warning: **WARNING:** `mike` pushes to `gh-pages` directly. MkDocs will overwrite these changes if you have an action to build `gh-pages`. Remove  actions that push (build) to `gh-pages` before you make any changes!
 
 ```
 mike deploy 0.1
