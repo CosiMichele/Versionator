@@ -1,11 +1,15 @@
 # Versionator
 
-Testing repository for versioning using MkDocs and mike
+> :warning: **Note**: this is not a software, just a guide.
+
+Testing repository for versioning using `MkDocs` and `mike`
 
 - MkDocs Material Theme: https://squidfunk.github.io/mkdocs-material/
 - mike: https://github.com/jimporter/mike
 
 Configuration tutorial: https://squidfunk.github.io/mkdocs-material/setup/setting-up-versioning/
+
+---
 
 ## Tutorial and Notes:
 
@@ -21,7 +25,9 @@ pip install --ignore-installed PyYAML
 pip install mike
 ```
 
-## Activating versions
+---
+
+## Activating Versions
 
 > **WARNING:** `mike` pushes to `gh-pages` directly. MkDocs will overwrite these changes if you have an action to build `gh-pages`. Remove  actions that push (build) to `gh-pages` before you make any changes!
 
@@ -41,17 +47,38 @@ mike serve
 mike deploy --push 0.1
 ```
 
-The first version will be pushed to the `gh-pages` branch.
+The first version will be pushed to the `gh-pages` branch (if `gh-pages` is not present, it will be created automatically).
 
-After changes, adding a second version with
+After changes, add a second version with
 
 ```
 mike deploy --push 0.2
-mike serve
 ```
 
-Defining defauilt with `mike set-default --push 0.2`
+Define default webpage with `mike set-default --push 0.2`.
 
-## Saving your changes to github
+---
 
-You can save your changes to github normally at any step, simply ensure that the `.github` folder does not contain any actions towards `gh-pages`.
+## Saving your changes to GitHub
+
+You can save your changes to GitHub normally at any step, simply ensure that the `.github` folder does not contain any actions towards `gh-pages`.
+
+---
+
+## Branches and Updates
+
+### Branches
+
+`mike` supports deployment from different branches. The correct order of steps is as follows:
+
+1. Deploy webpage with `mike` on `branch <A>` (this could be any branch of your liking).
+2. Save your changes to GitHub (add, commit, push) on `branch <A>`.
+3. Switch to `branch <B>`.
+4. Deploy webpage with `mike` on `branch <B>` (this could be any branch of your liking).
+5. Save your changes to GitHub (add, commit, push) on `branch <B>`.
+
+### Updates
+
+You can update a specific version of a `mike` deployed page with `mike deploy <version>` and `mike deploy --push <version>`; prior to pushing with `mike` **ensure that there are no typos in `<version>`**. This will overwrite the specific `mike` deployed version.
+
+Changes and updates can be saved to GitHub normally (add, commit, push).
