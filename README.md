@@ -79,7 +79,7 @@ You can save your changes to GitHub normally at any step, simply ensure that the
 
 ### Updates
 
-You can update a specific version of a `mike` deployed page with `mike deploy <version>` and `mike deploy --push <version>`; prior to pushing with `mike` **ensure that there are no typos in `<version>`**. This will overwrite the specific `mike` deployed version.
+You can update a specific version of a `mike` deployed page with `mike deploy <version>` and `mike deploy --push <version>`; This will overwrite the specific `mike` deployed version. Prior to pushing with `mike` **ensure that there are no typos in `<version>`**, as a typo will lead to the deployment of a new page instead.
 
 Changes and updates can be saved to GitHub normally (add, commit, push).
 
